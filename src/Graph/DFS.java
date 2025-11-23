@@ -13,6 +13,7 @@ public class DFS {
     public void dfsHelper(int node, ArrayList<ArrayList<Integer>> adj, boolean[] visited, ArrayList<Integer> res){
         visited[node]=true;
         res.add(node);
+
         for(int i : adj.get(node)){
             if(!visited[i]){
                 dfsHelper(i, adj, visited, res);
