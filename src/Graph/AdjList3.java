@@ -33,3 +33,26 @@ public class AdjList3 {
         }
     }
 }
+//// User function Template for Java
+//class Solution {
+//    public List<List<int[]>> printGraph(int V, int edges[][]) {
+//
+//        List<List<int[]>> adj = new ArrayList<>();
+//
+//        // Create empty adjacency list
+//        for (int i = 0; i < V; i++) {
+//            adj.add(new ArrayList<>());
+//        }
+//
+//        // Fill adjacency list for directed + weighted edges
+//        for (int i = 0; i < edges.length; i++) {
+//            int u = edges[i][0];
+//            int v = edges[i][1];
+//            int wt = edges[i][2];
+//
+//            adj.get(u).add(new int[]{v, wt});  // directed edge
+//        }
+//
+//        return adj;
+//    }
+//}
