@@ -13,6 +13,8 @@ public class Basics {
         }
     }
 
+
+
     // Insert method
     static Node insert(Node root, int val) {
         if (root == null) {
