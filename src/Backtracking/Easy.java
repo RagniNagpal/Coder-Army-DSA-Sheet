@@ -140,6 +140,8 @@ static void printSubstrings(String str, int start, int end) {
         findSubsets(str, "", 0);
         permut("ABC", "");
         int[] arr = {1, 2, 3};
+
+
         subsets(arr, 0, new ArrayList<>());
         printSubstrings("abc", 0, 1);
         print(5);
