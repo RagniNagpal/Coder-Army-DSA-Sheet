@@ -8,19 +8,16 @@ public class Replace0ToX {
 
         boolean[][] vis = new boolean[rows][cols];
 
-        // Top row and Bottom row
-        for (int col = 0; col < cols; col++) {
+        for (int col= 0; col < cols; col++) {
             if (grid[0][col] == 'O') dfs(grid, vis, 0, col);
             if (grid[rows - 1][col] == 'O') dfs(grid, vis, rows - 1, col);
         }
 
-        // Left column and Right column
         for (int row = 0; row < rows; row++) {
             if (grid[row][0] == 'O') dfs(grid, vis, row, 0);
             if (grid[row][cols - 1] == 'O') dfs(grid, vis, row, cols - 1);
         }
 
-        // Convert unvisited 'O' → 'X'
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 if (grid[r][c] == 'O' && !vis[r][c]) {
